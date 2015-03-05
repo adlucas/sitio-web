@@ -16,7 +16,7 @@
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    <script src="http://maps.google.com/maps/api/js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="../bower_components/modernizr/modernizr.js"></script>
@@ -33,6 +33,7 @@
     <![endif]-->
 
    <div class=" navbar-inverse">
+
       <div class="container">
 
         
@@ -47,14 +48,14 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Inicio</a></li>
-                <li><a href="recetas.html">Recetas</a></li>
-                <li><a href="donde.html">Donde estamos</a></li>
-                <li class="dropdown">
+                <li><a href="index.html">Inicio</a></li>
+                <li ><a href="recetas.html">Recetas</a></li>
+                <li ><a href="donde.html">Donde estamos</a></li>
+                <li class="dropdown active">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Informacion <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
                     <li><a href="doc.html" target="blanck">Documentacion</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li class="active"><a href="contacto.html">Contacto</a></li>
                   </ul>
                 </li>
               </ul>
@@ -63,91 +64,15 @@
     </div>
  <!-- Fin navbar -->
             
-                <div id="carousel" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel" data-slide-to="1"></li>
-                        <li data-target="#carousel" data-slide-to="2"></li>
-                        <li data-target="#carousel" data-slide-to="3"></li>
-                        <li data-target="#carousel" data-slide-to="4"></li>
-                        <li data-target="#carousel" data-slide-to="5"></li>
-                        <li data-target="#carousel" data-slide-to="6"></li>
-                    </ol>
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src="images/bar.jpg" class="img-responsive" alt="Rafting">
-                            
-                        </div>
+    <div  class="container marketing" id="about">
+
+   
+
+      <!-- START THE FEATURETTES -->
 
 
-        <div class="item">
-
-          <img src="images/comida1.jpg" alt="Second slide" class="img-responsive">
-         
-            
-        </div>
-                       
-        <div class="item">
-
-          <img src="images/comida2.jpg" alt="Second slide" class="img-responsive">
-         
-            
-        </div>
-
-          <div class="item">
-          <img src="images/comida3.jpg" alt="Second slide" class="img-responsive">
-         
-        </div>
-
-          
-
-         <div class="item">
-          <img src="images/comida4.jpg" alt="Second slide" class="img-responsive">
-         
-        </div>
-
-           <div class="item">
-          <img src="images/comida5.jpg" alt="Second slide" class="img-responsive">
-         
-        </div>
-
-
-         <div class="item">
-          <img src="images/comida6.jpg" alt="Second slide" class="img-responsive">
-         
-        </div>
-
-      
-
-          
-
-
-
-                        
-                    </div>
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                </div>
-
-             <hr class="featurette-divider">
-
-            
-       
-
-     
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-           
-    <div class="container marketing" id="about">
+      <hr class="featurette-divider">
+  <div class="container marketing" id="contacto">
 
    
 
@@ -159,18 +84,13 @@
 
             <div class="container">
         <div class="col-md-7">
-         
-          <p >Desde 1977
-
-Bienvenidos a La Ojiva, tu espacio en Huesca para desayunos, almuerzos, cenas, tapeo, celebraciones y reuniones.<br><br>
-
-Aquí encontrarás una cuidada cocina de temporada, con especialidades elaboradas, deliciosas tapas, y también menús personalizados para grupos y empresas.<br><br>
-
-Si aún no nos conoces, ¡tienes que venir!</p>
+         <h2 class="featurette-heading">Contacto. </h2>
+          <p >En Restaurante La Ojiva trabajamos cada día para seguir consolidando nuestra imagen de servicio y calidad ante propios y visitantes de nuestra región.<br>Para cualquier tipo de consulta o reserva, no dude en contactar con nosotros.<br> ¡Le esperamos!</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive"  src="images/tapas.jpg" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive"  src="images/mesas.jpg" alt="Mesas">
         </div>
+
       </div>
 
       
@@ -178,11 +98,49 @@ Si aún no nos conoces, ¡tienes que venir!</p>
       <hr class="featurette-divider">
 
       <!-- /END THE FEATURETTES -->
+  </div>
+
+
+<div class="row">
+  <form class="form-horizontal" name="commentform">
+    <div class="form-group">
+        <div class="col-md-4">
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre"/>
+        </div>
+        <div class="col-md-4">
+            <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Telefono"/>
+        </div>
+        <div class="col-md-4">
+        
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email "/>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-12">
+            <textarea rows="6" class="form-control" id="comments" name="comments" placeholder="Pregunta o comentario"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-6">
+            <button type="submit" value="Submit" class="btn btn-warning pull-right">Send</button>
+        </div>
+    </div>
+</form>
+</div><!-- /row -->
+       
+
+      
+
+ <hr class="featurette-divider">
+      <!-- /END THE FEATURETTES -->
   </div><!-- /.container -->
 
+     
 
- <!-- FOOTER -->
-      <footer class="footer navbar-inverse nav ">
+
+
+      <!-- FOOTER -->
+ <footer class="footer navbar-inverse nav ">
       <div class="container ">
       <br>
         <p class="pull-right"><a href="#">Volver arriba</a></p>

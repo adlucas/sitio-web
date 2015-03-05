@@ -13,13 +13,13 @@
 @text-color:           #000000;
 
 //** Global textual link color.
-@link-color:            orange;
+@link-color:            #FF0000;
 //** Link hover color set via `darken()` function.
 @link-hover-color:      darken(@link-color, 15%);
 //** Link hover decoration.
 @link-hover-decoration: underline;
 
-@brand-primary:orange;
+@brand-primary:#FF0000;
 
 @navbar-inverse-color:                      lighten(@gray-light, 15%);
 
@@ -33,5 +33,37 @@
 
 @navbar-margin-bottom:            0px;
 
+.blanco{
+	color:#FFFFFF;
+}
 
 
+      #map-outer {  height: 440px; 
+	  				padding: 20px; 
+					border: 2px solid #CCC; 
+					margin-bottom: 20px; 
+					background-color:#FFF }
+	  #map-container { height: 400px }
+	  @media all and (max-width: 991px) {
+		#map-outer  { height: 650px }
+		}
+//solo muestro los videos si el dispositivo tiene mas de 600px
+@media all and (max-width: 600px){
+	.videoout { display: none; 
+	}
+}
+	
+
+
+
+#iconmenu {position: relative; margin: 10px auto; padding: 3px; width: 206px; height: 52px; }
+#iconmenu li {width: 50px; height: 45px; position: absolute; top: 2px; background: url(../images/sprite4.png) 0 0 no-repeat; display: block; list-style: none;}
+#iconmenu a {width: 50px; height: 45px; display: block; border: solid 1px #fff;}
+#iconmenu a:hover {border: solid 1px #000;}
+#iconmenu #panel1c {left: 2px; }
+#iconmenu #panel2c {left: 54px; background-position: -51px 0;}
+#iconmenu #panel3c {left: 106px; background-position: -156px 0;}
+
+#iconmenu #panel1c a:hover {background: url(../images/sprite4.png) -1px -45px no-repeat;}
+#iconmenu #panel2c a:hover {background: url(../images/sprite4.png) -52px -45px no-repeat;}
+#iconmenu #panel3c a:hover {background: url(../images/sprite4.png) -157px -45px no-repeat;}
