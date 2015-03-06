@@ -1,5 +1,9 @@
-'use strict';
+
+        var google;
+
       function initMap() {
+
+        'use strict';
     var varLocation = new google.maps.LatLng(42.142581, -0.417403);
  
         var varMapoptions = {
